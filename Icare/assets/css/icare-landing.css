@@ -1,0 +1,357 @@
+/* iCare Landing - design strictly from Icare/assets or sample/assets. Gradients and layout here. */
+:root {
+  --icare-green: #009248;
+  --icare-green-light: #00a854;
+  --icare-green-dark: #007a3a;
+  --icare-yellow: #febd17;
+  --icare-yellow-light: #ffd700;
+  --icare-yellow-soft: rgba(254, 189, 23, 0.08);
+  --icare-yellow-soft-50: rgba(254, 189, 23, 0.5);
+}
+
+/* ========== PAGE LOADER - same as sample (no gradient; uses bundle .page-loader) ========== */
+/* No overrides: bundle provides background-color: var(--bs-body-bg), fixed position, flex center */
+
+/* ========== APP HEADER - subtle gradient ========== */
+#kt_app_header.app-header {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fcf9 50%, #ffffff 100%) !important;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg, var(--icare-green), var(--icare-yellow), var(--icare-green)) 1;
+  box-shadow: 0 2px 12px rgba(0, 146, 72, 0.06);
+}
+
+/* ========== FOOTER - gradient ========== */
+footer {
+  background: linear-gradient(180deg, #f8fcf9 0%, #fff9eb 30%, #ffffff 100%);
+  border-top: 1px solid rgba(0, 146, 72, 0.12);
+}
+
+/* ========== HERO SECTION ========== */
+#hero {
+  background: linear-gradient(135deg, var(--icare-green) 0%, var(--icare-green-light) 35%, var(--icare-green-dark) 70%, var(--icare-green) 100%) !important;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+#hero .app-container,
+#hero .container-xxl {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  #hero .app-container, #hero .container-xxl { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
+@media (min-width: 1024px) {
+  #hero .app-container, #hero .container-xxl { padding-left: 2rem; padding-right: 2rem; }
+}
+#hero .position-relative { position: relative; z-index: 10; }
+#hero .hero-blur-wrap { pointer-events: none; }
+#hero .hero-blur-circle { filter: blur(3rem); }
+#hero .hero-blur-yellow { width: 8rem; height: 8rem; top: 5rem; left: 2.5rem; }
+#hero .hero-blur-white { width: 10rem; height: 10rem; bottom: 5rem; right: 2.5rem; }
+#hero .text-white,
+#hero p,
+#hero h1 { color: #fff !important; }
+#hero h1 {
+  font-size: clamp(2rem, 5vw, 4rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 1rem !important;
+}
+#hero .text-icare-yellow { color: var(--icare-yellow) !important; font-weight: 700 !important; }
+#hero p { font-size: 1.125rem; line-height: 1.6; opacity: 0.95; max-width: 32rem; }
+#hero .icare-badge {
+  background: linear-gradient(to right, var(--icare-yellow), var(--icare-yellow-light)) !important;
+  color: #fff !important;
+  border-radius: 9999px;
+  padding: 0.5rem 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.2);
+  border: 2px solid rgba(255,255,255,0.3);
+}
+#hero .icare-card-hover {
+  background: rgba(255,255,255,0.1) !important;
+  border: 2px solid rgba(255,255,255,0.2) !important;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: #fff !important;
+  transition: all 0.2s;
+}
+#hero .icare-card-hover:hover {
+  background: rgba(255,255,255,0.2) !important;
+  border-color: var(--icare-yellow) !important;
+  transform: scale(1.05);
+}
+#hero .icare-btn-cta {
+  background: linear-gradient(to right, var(--icare-yellow), var(--icare-yellow-light)) !important;
+  color: #fff !important;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+#hero .icare-btn-cta:hover { color: #fff; transform: scale(1.05); box-shadow: 0 0 30px rgba(254,189,23,0.6); }
+#hero .icare-btn-outline {
+  background: #fff !important;
+  color: var(--icare-green) !important;
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+#hero .icare-btn-outline:hover { background: #f3f4f6 !important; border-color: var(--icare-yellow); color: var(--icare-green) !important; transform: scale(1.05); }
+#hero .hero-card-glass {
+  background: rgba(255,255,255,0.2) !important;
+  backdrop-filter: blur(12px);
+  border: 4px solid rgba(255,255,255,0.3) !important;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  overflow: visible !important;
+}
+#hero .hero-card-img {
+  height: 280px;
+  min-height: 280px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: rgba(255,255,255,0.2);
+  display: block;
+}
+#hero .hero-badge-no-cost {
+  background: linear-gradient(135deg, var(--icare-yellow), var(--icare-yellow-light)) !important;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 2px solid #fff;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.2);
+  transform: rotate(12deg);
+  min-width: 5rem;
+}
+#hero .hero-badge-welcome {
+  background: #fff !important;
+  color: var(--icare-green) !important;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 2px solid var(--icare-yellow);
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.2);
+  transform: rotate(-6deg);
+}
+
+/* ========== SECTION BACKGROUNDS (gradients) ========== */
+.icare-bg-hero { background: linear-gradient(135deg, var(--icare-green) 0%, var(--icare-green-light) 40%, var(--icare-green-dark) 100%); }
+.icare-bg-services { background: linear-gradient(180deg, var(--icare-green) 0%, var(--icare-green-light) 50%, var(--icare-green-dark) 100%); }
+.icare-bg-faculties { background: linear-gradient(135deg, var(--icare-green) 0%, var(--icare-green-light) 50%, var(--icare-green) 100%); }
+.icare-bg-feedback { background: linear-gradient(to bottom, #fff 0%, var(--icare-yellow-soft) 50%, #fff 100%); }
+.icare-bg-faq { background: linear-gradient(180deg, var(--icare-green) 0%, var(--icare-green-dark) 100%); }
+.icare-bg-learnmore { background: transparent; }
+
+/* Tutorial section - gradient in CSS only */
+#tutorial.icare-bg-tutorial {
+  background: linear-gradient(to bottom, #fff 0%, var(--icare-yellow-soft) 50%, #fff 100%);
+}
+
+/* Learn more / CTA strip - yellow gradient */
+.icare-cta-yellow {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to right, var(--icare-green), var(--icare-green-light));
+  border: 3px solid rgba(255,255,255,0.3);
+  box-shadow: 0 6px 24px rgba(0, 146, 72, 0.2);
+}
+.icare-cta-yellow,
+.icare-cta-yellow h3,
+.icare-cta-yellow p { color: #fff !important; }
+.icare-cta-yellow .icare-btn-outline { color: var(--icare-green) !important; background: #fff !important; border-color: rgba(255,255,255,0.8); }
+.icare-cta-yellow .icare-btn-outline:hover { background: #f8f9fa !important; border-color: #fff; color: var(--icare-green) !important; }
+.icare-cta-yellow .btn-success { background: var(--icare-yellow) !important; border-color: var(--icare-yellow) !important; color: #fff !important; }
+.icare-cta-green {
+  background: linear-gradient(to right, var(--icare-green), var(--icare-green-light));
+  border: 4px solid rgba(254,189,23,0.3);
+}
+.icare-cta-green,
+.icare-cta-green h3,
+.icare-cta-green p { color: #fff !important; }
+.icare-cta-green .icare-btn-cta { color: #fff !important; }
+
+/* ========== UTILITIES (move inline styles into assets) ========== */
+.icare-max-w-sm { max-width: 32rem; }
+.icare-max-w-md { max-width: 48rem; }
+.icare-max-w-lg { max-width: 56rem; }
+.icare-wave-wrap { height: 8rem; pointer-events: none; }
+.icare-card-img-h { height: 14rem; }
+.icare-card-img-h-sm { height: 12rem; }
+.icare-card-img-h-lg { height: 16rem; }
+.icare-check-circle { width: 1.5rem; height: 1.5rem; font-size: 0.7rem; }
+.icare-feedback-quote-badge { width: 3rem; height: 3rem; margin: -0.5rem 0 0 -0.5rem; }
+.icare-avatar-sm { width: 3.5rem; height: 3.5rem; }
+.icare-logo-hero { height: 3rem; }
+.icare-corner-ribbon { transform: rotate(45deg) translate(2.5rem, -2.5rem); }
+.icare-svc-icon { max-height: 8rem; width: auto; }
+
+/* ========== GLOBAL ICARE TOKENS ========== */
+.icare-container { max-width: 80rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+@media (min-width: 640px) { .icare-container { padding-left: 1.5rem; padding-right: 1.5rem; } }
+@media (min-width: 1024px) { .icare-container { padding-left: 2rem; padding-right: 2rem; } }
+
+.text-icare-green { color: var(--icare-green) !important; }
+.text-icare-yellow { color: var(--icare-yellow) !important; }
+.bg-icare-green { background-color: var(--icare-green) !important; }
+.bg-icare-yellow { background-color: var(--icare-yellow) !important; }
+.bg-gradient-icare-yellow { background: linear-gradient(to right, var(--icare-yellow), var(--icare-yellow-light)) !important; }
+.border-icare-green { border-color: var(--icare-green) !important; }
+.border-icare-yellow { border-color: var(--icare-yellow) !important; }
+
+.icare-badge { background: linear-gradient(to right, var(--icare-yellow), var(--icare-yellow-light)); color: #fff; border-radius: 9999px; padding: 0.5rem 1.5rem; display: inline-block; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+.icare-btn-cta { background: linear-gradient(to right, var(--icare-yellow), var(--icare-yellow-light)); color: #fff; border: 2px solid rgba(255,255,255,0.3); border-radius: 9999px; padding: 0.75rem 1.5rem; transition: transform .2s, box-shadow .2s; }
+.icare-btn-cta:hover { color: #fff; transform: scale(1.05); box-shadow: 0 0 30px rgba(254,189,23,0.6); }
+.icare-btn-outline { background: #fff; color: var(--icare-green); border: 2px solid transparent; border-radius: 9999px; padding: 0.75rem 1.5rem; transition: all .2s; }
+.icare-btn-outline:hover { background: #f3f4f6; border-color: var(--icare-yellow); color: var(--icare-green); transform: scale(1.05); }
+
+/* About section: green feature cards – white text, refined look */
+.icare-card-feature {
+  background: linear-gradient(145deg, var(--icare-green) 0%, var(--icare-green-light) 50%, var(--icare-green-dark) 100%);
+  border: 3px solid rgba(255,255,255,0.25);
+  border-radius: 1.5rem;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  box-shadow: 0 10px 30px -10px rgba(0,146,72,0.35);
+}
+.icare-card-feature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(0,146,72,0.4);
+  border-color: rgba(254,189,23,0.5);
+}
+.icare-card-feature,
+.icare-card-feature h3,
+.icare-card-feature p { color: #fff !important; }
+.icare-card-feature p { opacity: 0.95; }
+
+.icare-icon-circle {
+  width: 4.5rem;
+  height: 4.5rem;
+  background: linear-gradient(145deg, var(--icare-yellow), var(--icare-yellow-light));
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+  box-shadow: 0 8px 24px -6px rgba(254,189,23,0.5);
+}
+.icare-card-feature:hover .icare-icon-circle {
+  box-shadow: 0 10px 28px -4px rgba(254,189,23,0.6);
+}
+
+.icare-card-white { background: #fff; border: 4px solid rgba(254,189,23,0.2); border-radius: 1.5rem; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); transition: all .2s; }
+.icare-card-white:hover { transform: scale(1.02); box-shadow: 0 25px 50px -12px rgba(254,189,23,0.3); }
+
+.icare-feedback-card { border-radius: 1.5rem; border: 2px solid; padding: 1rem 1.5rem; transition: all .2s; }
+.icare-feedback-card:hover { transform: scale(1.02); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); }
+/* Feedback: white text for name, program, year on cards (Icare/assets only) */
+.icare-feedback-card .icare-feedback-name { color: #fff !important; font-weight: 700; }
+.icare-feedback-card .icare-feedback-meta { color: rgba(255,255,255,0.95) !important; font-weight: 500; }
+.icare-feedback-card .icare-feedback-quote { color: #252f4a !important; background: #fff !important; }
+.icare-faq-item { background: #fff; border-radius: 1rem; border: 2px solid rgba(255,255,255,0.2); overflow: hidden; transition: border-color .2s; }
+.icare-faq-item:hover { border-color: var(--icare-yellow); }
+.icare-faq-answer { background: linear-gradient(135deg, rgba(0,146,72,0.1), rgba(254,189,23,0.1)); border-left: 4px solid var(--icare-yellow); border-radius: 0.75rem; padding: 1rem; }
+
+.icare-carousel-btn { width: 3rem; height: 3rem; border-radius: 50%; background: linear-gradient(to right, var(--icare-yellow), var(--icare-yellow-light)); color: #fff; border: none; display: flex; align-items: center; justify-content: center; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); transition: transform .2s; }
+.icare-carousel-btn:hover { color: #fff; transform: scale(1.1); }
+.icare-dot { width: 0.75rem; height: 0.75rem; border-radius: 50%; background: rgba(255,255,255,0.5); transition: all .3s; }
+.icare-dot.active { background: var(--icare-yellow); width: 2rem; }
+
+@keyframes icare-spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.icare-animate-spin-slow { animation: icare-spin-slow 20s linear infinite; }
+.icare-min-h-hero { min-height: 100vh; }
+#hero .rounded-circle.bg-icare-yellow { background: var(--icare-yellow) !important; }
+#hero .rounded-circle.bg-white { background: #fff !important; }
+@keyframes icare-pulse { 50% { opacity: 0.3; } }
+#hero .icare-badge { animation: icare-pulse 2s ease-in-out infinite; }
+#services, #about, #feedback, #faq, #faculties, #tutorial, #learn-more { scroll-margin-top: 6rem; }
+
+.icare-card-hover:hover { border-color: var(--icare-yellow) !important; background: rgba(255,255,255,0.2) !important; transform: scale(1.05); }
+
+@media (max-width: 768px) {
+  .icare-carousel-btn { width: 2.5rem; height: 2.5rem; }
+}
+
+/* ========== EVENT CARDS (match reference: image, On Sale tag, title, details with icons) ========== */
+.icare-event-card {
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s;
+}
+.icare-event-card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.12); }
+.icare-event-card .icare-event-img-wrap {
+  width: 100%;
+  height: 12rem;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+.icare-event-card .icare-event-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.icare-event-card .icare-event-body { padding: 1.25rem 1.5rem; }
+.icare-event-card .icare-event-tag {
+  display: inline-block;
+  background: #86d8a4;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  margin-bottom: 0.75rem;
+}
+.icare-event-card .icare-event-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #252f4a;
+  margin-bottom: 1rem;
+  line-height: 1.35;
+}
+.icare-event-card .icare-event-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #252f4a;
+  margin-bottom: 0.4rem;
+}
+.icare-event-card .icare-event-detail:last-child { margin-bottom: 0; }
+.icare-event-card .icare-event-detail i.ki-outline {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.icare-event-card .icare-event-detail.icare-event-date { color: var(--icare-green); }
+.icare-event-card .icare-event-detail.icare-event-date i { color: var(--icare-green); }
