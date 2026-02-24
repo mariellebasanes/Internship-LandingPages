@@ -1,0 +1,31 @@
+
+:root {
+  --bs-font-sans-serif: Helvetica, Arial, sans-serif;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --gco-font-sans: Helvetica, Arial, sans-serif;
+  --gco-font-heading: Helvetica, Arial, sans-serif;
+  --gco-font-display: Helvetica, Arial, sans-serif;
+}
+
+/* Apply sample/assets font stack to body and headings */
+body,
+#kt_app_body,
+.app-default {
+  font-family: Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6,
+.gco-heading-xl {
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+
+/* Hero title: same font as sample/assets */
+#kt_app_content .gco-hero .gco-hero-title,
+#kt_app_content .gco-hero .gco-hero-content h1.gco-hero-title,
+.gco-hero .gco-hero-title,
+.gco-badge,
+[class*="gco-badge"] {
+  font-family: Helvetica, Arial, sans-serif !important;
+}

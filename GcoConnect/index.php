@@ -1,0 +1,63 @@
+<?php
+define('MBG', TRUE);
+
+// Base URL for this app (works when run from /Gco_Connect/GcoConnect/ or /GcoConnect/index.php)
+$uri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
+$GCO_BASE = (substr(rtrim($uri, '/'), -9) === 'index.php' ? dirname($uri) . '/' : rtrim($uri, '/') . '/');
+if ($GCO_BASE === '/' || $GCO_BASE === '') {
+  $GCO_BASE = '/';
+}
+
+include(__DIR__ . '/functions-new.php');
+
+$META_TITLE = "GCO Connect – Student Counseling & Support";
+$META_DESC = "Professional counseling services for students. Connect with licensed therapists and the Guidance and Counseling Office.";
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <?php HEAD_ESSENTIALS(); ?>
+  <!-- Style from Gco_Connect (gcoraw); fonts from sample/assets -->
+  <link rel="stylesheet" href="<?php echo htmlspecialchars($GCO_BASE); ?>assets/css/font-assets-sample.css" type="text/css" />
+  <link rel="stylesheet" href="<?php echo htmlspecialchars($GCO_BASE); ?>assets/css/gco-design.css" type="text/css" />
+</head>
+
+<body id="kt_app_body" data-kt-app-layout="light-header" class="app-default">
+  <div class="d-flex flex-column flex-root app-root" id="kt_app_root">
+    <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
+      <?php include(__DIR__ . "/partials/_header.php"); ?>
+      <div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
+        <div class="app-main flex-column flex-row-fluid" id="kt_app_main">
+          <div class="d-flex flex-column flex-column-fluid">
+            <main>
+              <div class="app-container container-xxl">
+                <div id="kt_app_content" class="flex-column-fluid">
+                  <?php
+                  include(__DIR__ . "/pages/view/index-section-hero-gco.php");
+                  include(__DIR__ . "/pages/view/index-section-services-gco.php");
+                  include(__DIR__ . "/pages/view/index-section-how-it-works-gco.php");
+                  include(__DIR__ . "/pages/view/index-section-team-gco.php");
+                  include(__DIR__ . "/pages/view/index-section-psychological-gco.php");
+                  include(__DIR__ . "/pages/view/index-section-purpose-gco.php");
+                  include(__DIR__ . "/pages/view/index-section-special-programs-gco.php");
+                  include(__DIR__ . "/pages/view/index-section-faq-gco.php");
+                  include(__DIR__ . "/pages/view/index-section-cta-gco.php");
+                  ?>
+                </div>
+              </div>
+            </main>
+          </div>
+          <?php
+          $base = isset($GCO_BASE) ? $GCO_BASE : '';
+          $assets_base = (isset($GCO_BASE) ? $GCO_BASE . 'pages/assets' : 'assets');
+          include(__DIR__ . "/../GcoConnect/partials/_footer.php");
+          ?>
+        </div>
+      </div>
+    </div>
+  </div>
+  <?php include(__DIR__ . "/partials/_scrolltop.php"); ?>
+</body>
+
+</html>
