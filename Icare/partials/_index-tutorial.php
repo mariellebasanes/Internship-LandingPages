@@ -27,7 +27,7 @@ $events = [
   ],
 ];
 ?>
-<section id="tutorial" class="icare-bg-tutorial py-15 py-lg-20 position-relative overflow-hidden">
+<section id="tutorial" class="icare-bg-tutorial py-15 py-lg-20 position-relative">
   <div class="app-container container-xxl position-relative">
     <div class="text-center mb-12 mb-lg-16">
       <div class="icare-badge mb-4">

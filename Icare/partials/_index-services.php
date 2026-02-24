@@ -1,4 +1,4 @@
-<section id="services" class="icare-bg-services py-15 py-lg-20 position-relative overflow-hidden">
+<section id="services" class="icare-bg-services py-15 py-lg-20 position-relative">
   <div class="app-container container-xxl position-relative">
     <div class="text-center mb-12 mb-lg-16 text-white">
       <div class="icare-badge mb-4 px-4 py-3">

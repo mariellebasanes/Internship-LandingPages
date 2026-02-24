@@ -1,7 +1,7 @@
-<section id="about" class="py-15 py-lg-20 bg-white position-relative overflow-hidden">
-  <div class="position-absolute top-0 start-0 w-100 icare-wave-wrap">
-    <svg class="w-100 h-100" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0L60 10C120 20 240 40 360 46.7C480 53 600 47 720 43.3C840 40 960 40 1080 46.7C1200 53 1320 67 1380 73.3L1440 80V0H0Z" fill="#febd17" fill-opacity="0.1"/>
+<section id="about" class="py-15 py-lg-20 position-relative icare-bg-about">
+  <div class="position-absolute top-0 start-0 w-100 icare-wave-wrap" aria-hidden="true">
+    <svg class="w-100 h-100" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0 0L60 10C120 20 240 40 360 46.7C480 53 600 47 720 43.3C840 40 960 40 1080 46.7C1200 53 1320 67 1380 73.3L1440 80V120H0V0Z" fill="#ffffff"/>
     </svg>
   </div>
   <div class="app-container container-xxl position-relative">

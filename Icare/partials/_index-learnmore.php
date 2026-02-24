@@ -1,4 +1,4 @@
-<section id="learn-more" class="icare-bg-learnmore py-15 py-lg-20 position-relative overflow-hidden">
+<section id="learn-more" class="icare-bg-learnmore py-15 py-lg-20 position-relative">
   <div class="app-container container-xxl position-relative">
     <div class="rounded-3 p-6 p-lg-12 text-center text-white position-relative overflow-hidden shadow mb-12 mb-lg-16 icare-cta-yellow">
       <h3 class="display-6 mb-4 text-white">Struggling? We've Got You! 🦸</h3>

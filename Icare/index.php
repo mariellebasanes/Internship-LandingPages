@@ -3,7 +3,18 @@
  * iCare Landing Page - structure and assets follow sample folder.
  */
 define('MBG', TRUE);
-define('ICARE_BASE', '/Icare/Icare');
+
+// Detect assets base path from filesystem so CSS/JS/images load in any folder (e.g. iCare-Landing-Page/Icare/)
+$doc_root = rtrim(str_replace('\\', '/', (string) $_SERVER['DOCUMENT_ROOT']), '/');
+$icare_dir = rtrim(str_replace('\\', '/', __DIR__), '/');
+if ($doc_root !== '' && strpos($icare_dir, $doc_root) === 0) {
+  $base_path = substr($icare_dir, strlen($doc_root));
+  define('ICARE_BASE', $base_path === '' ? '' : $base_path);
+} else {
+  $script_dir = dirname((string) $_SERVER['SCRIPT_NAME']);
+  $script_dir = $script_dir === '/' || $script_dir === '\\' ? '' : rtrim(str_replace('\\', '/', $script_dir), '/');
+  define('ICARE_BASE', $script_dir);
+}
 
 $icare_root = __DIR__;
 if (!is_file($icare_root . '/functions-new.php')) {
@@ -21,7 +32,7 @@ require_once $functions_path;
 
 $META_TITLE = "iCare - Academic Support at FEU Tech";
 $META_DESC = "Free tutoring, study groups, and academic support for FEU Tech students. Your study buddy awaits!";
-$ICARE_HOME = '/Icare/';
+$ICARE_HOME = (ICARE_BASE === '' ? '/' : ICARE_BASE . '/');
 $ICARE_PARTIALS = $icare_root . '/partials';
 ?>
 <!DOCTYPE html>
