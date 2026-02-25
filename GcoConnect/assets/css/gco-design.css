@@ -458,10 +458,49 @@ h1, h2, h3 {
   pointer-events: none;
 }
 .gco-team .gco-container { position: relative; z-index: 1; }
-.gco-team .gco-team-card { background: var(--bs-body-bg); border-radius: var(--bs-card-border-radius); overflow: hidden; box-shadow: var(--bs-card-box-shadow); border: var(--bs-border-width) solid var(--bs-card-border-color); }
-.gco-team .gco-team-img { height: 18rem; overflow: hidden; position: relative; }
-.gco-team .gco-team-img img { width: 100%; height: 100%; object-fit: cover; }
-.gco-team .gco-team-img .gco-team-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.7), rgba(0,0,0,.2), transparent); }
+.gco-team .gco-team-card {
+  background: var(--bs-body-bg);
+  border-radius: var(--bs-card-border-radius);
+  overflow: hidden;
+  box-shadow: var(--bs-card-box-shadow);
+  border: var(--bs-border-width) solid var(--bs-card-border-color);
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease, opacity .4s ease;
+  opacity: 0;
+  transform: translateY(16px);
+  animation: gco-team-fade-up .6s ease forwards;
+}
+.gco-team .gco-grid-3 .gco-team-card:nth-child(2) { animation-delay: .08s; }
+.gco-team .gco-grid-3 .gco-team-card:nth-child(3) { animation-delay: .16s; }
+.gco-team .gco-grid-2 .gco-team-card:nth-child(1) { animation-delay: .24s; }
+.gco-team .gco-grid-2 .gco-team-card:nth-child(2) { animation-delay: .32s; }
+.gco-team .gco-team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--bs-box-shadow-lg);
+  border-color: rgba(232,105,88,.35);
+}
+.gco-team .gco-team-img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100%; /* square aspect ratio fallback */
+}
+.gco-team .gco-team-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+.gco-team .gco-team-card:hover .gco-team-img img {
+  transform: scale(1.05);
+}
+.gco-team .gco-team-img .gco-team-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.45), rgba(0,0,0,.14), transparent);
+}
 .gco-team .gco-team-body { padding: 1rem 1.25rem; background: var(--bs-gray-100); }
 #kt_app_content .gco-team .gco-team-body .small.fw-semibold.text-secondary.text-uppercase { color: var(--gco-primary) !important; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; }
 .gco-team .gco-team-role { background: linear-gradient(to right, var(--gco-primary), var(--gco-secondary)); color: #fff; padding: 0.35rem 0.75rem; border-radius: var(--bs-border-radius-pill); font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.05em; display: inline-block; margin-bottom: 0.5rem; }
@@ -472,6 +511,17 @@ h1, h2, h3 {
 .gco-team .gco-team-cta { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; background: linear-gradient(to right, var(--gco-primary), var(--gco-secondary)); color: #fff; padding: 0.5rem 0.75rem; border-radius: var(--bs-border-radius); font-size: 0.8125rem; font-weight: 600; text-decoration: none; margin-top: 0.5rem; }
 .gco-team .gco-team-cta:hover { color: #fff; opacity: .95; }
 @media (min-width: 768px) { .gco-team .gco-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; } .gco-team .gco-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 56rem; margin-left: auto; margin-right: auto; } }
+
+@keyframes gco-team-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* Metronic-style tokens (sample) for purpose section */
 #kt_app_content .gco-purpose {

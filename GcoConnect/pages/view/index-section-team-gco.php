@@ -1,11 +1,45 @@
 <?php
 $assetsBase = 'pages/assets';
+// Photo assets for GCO team members
+$photoBase = isset($GCO_BASE)
+  ? $GCO_BASE . 'assets/img/GCO Assets/gco faculties'
+  : 'assets/img/GCO Assets/gco faculties';
 $team = [
-  ['name' => 'Rochile G. Borje', 'role' => 'GUIDANCE COUNSELOR', 'email' => 'rgborje@feutech.edu.ph', 'programs' => ['BSCE', 'BSCEM', 'BSCPE', 'BSECE']],
-  ['name' => 'Vilma R. Colinco', 'role' => 'GUIDANCE COUNSELOR', 'email' => 'vrcolinco@feutech.edu.ph', 'programs' => ['BSITSMBA', 'BSCYBER', 'BSMFGE', 'BSCE']],
-  ['name' => 'Charlene Marie A. Arabejo', 'role' => 'GUIDANCE COUNSELOR', 'email' => 'caarabejo@feutech.edu.ph', 'programs' => ['BSITSMBA', 'BSCYBER']],
-  ['name' => 'Moira Ashley C. Roy', 'role' => 'PSYCHOMETRICIAN', 'email' => 'mcroy@feutech.edu.ph', 'programs' => ['BSMFGE', 'BSCE', 'BSITWMA', 'BSITAGD']],
-  ['name' => 'Paula Trisha D. Balcera', 'role' => 'GUIDANCE COUNSELOR', 'email' => 'pdbalcera@feutech.edu.ph', 'programs' => ['BSITWMA', 'BSITAGD']],
+  [
+    'name' => 'Rochile G. Borje',
+    'role' => 'GUIDANCE COUNSELOR',
+    'email' => 'rgborje@feutech.edu.ph',
+    'programs' => ['BSCE', 'BSCEM', 'BSCPE', 'BSECE'],
+    'photo' => 'borje.png',
+  ],
+  [
+    'name' => 'Vilma R. Colinco',
+    'role' => 'GUIDANCE COUNSELOR',
+    'email' => 'vrcolinco@feutech.edu.ph',
+    'programs' => ['BSITSMBA', 'BSCYBER', 'BSMFGE', 'BSCE'],
+    'photo' => 'Colinco.png',
+  ],
+  [
+    'name' => 'Charlene Marie A. Arabejo',
+    'role' => 'GUIDANCE COUNSELOR',
+    'email' => 'caarabejo@feutech.edu.ph',
+    'programs' => ['BSITSMBA', 'BSCYBER'],
+    'photo' => 'Arabejo.png',
+  ],
+  [
+    'name' => 'Moira Ashley C. Roy',
+    'role' => 'PSYCHOMETRICIAN',
+    'email' => 'mcroy@feutech.edu.ph',
+    'programs' => ['BSMFGE', 'BSCE', 'BSITWMA', 'BSITAGD'],
+    'photo' => 'roy.png',
+  ],
+  [
+    'name' => 'Paula Trisha D. Balcera',
+    'role' => 'GUIDANCE COUNSELOR',
+    'email' => 'pdbalcera@feutech.edu.ph',
+    'programs' => ['BSITWMA', 'BSITAGD'],
+    'photo' => 'balcera.png',
+  ],
 ];
 ?>
 <section class="gco-section gco-team position-relative">
@@ -19,7 +53,11 @@ $team = [
       <?php foreach (array_slice($team, 0, 3) as $m): ?>
       <div class="gco-team-card">
         <div class="gco-team-img">
+          <?php if (!empty($m['photo'])): ?>
+          <img src="<?= htmlspecialchars($photoBase . '/' . $m['photo']) ?>" alt="<?= htmlspecialchars($m['name']) ?>">
+          <?php else: ?>
           <img src="<?= $assetsBase ?>/img/logo/icon-gco-connect.svg" alt="" role="presentation" style="object-fit:contain;padding:3rem;background:linear-gradient(135deg, var(--gco-primary), var(--gco-secondary));">
+          <?php endif; ?>
           <div class="gco-team-overlay"></div>
           <div class="position-absolute bottom-0 start-0 end-0 p-4 text-white">
             <span class="gco-team-role"><?= htmlspecialchars($m['role']) ?></span>
@@ -42,7 +80,11 @@ $team = [
       <?php foreach (array_slice($team, 3, 2) as $m): ?>
       <div class="gco-team-card">
         <div class="gco-team-img">
+          <?php if (!empty($m['photo'])): ?>
+          <img src="<?= htmlspecialchars($photoBase . '/' . $m['photo']) ?>" alt="<?= htmlspecialchars($m['name']) ?>">
+          <?php else: ?>
           <img src="<?= $assetsBase ?>/img/logo/icon-gco-connect.svg" alt="" role="presentation" style="object-fit:contain;padding:3rem;background:linear-gradient(135deg, var(--gco-secondary), var(--gco-primary));">
+          <?php endif; ?>
           <div class="gco-team-overlay"></div>
           <div class="position-absolute bottom-0 start-0 end-0 p-4 text-white">
             <span class="gco-team-role"><?= htmlspecialchars($m['role']) ?></span>
