@@ -15,7 +15,7 @@
         ?>
     </div>
 
-    <div class="menu menu-notifications menu-sub menu-sub-dropdown menu-column w-100 w-lg-500px" data-kt-menu="true" id="edith_notifications" user="<?php echo $identification; ?>">
+    <div class="menu menu-notifications menu-sub menu-sub-dropdown menu-column w-lg-500px" data-kt-menu="true" id="edith_notifications" user="<?php echo $identification; ?>">
         <div class="notifications-body scroll-y mh-325px my-5 mx-0 row">
             <h4 class="col-12 px-8 mb-3">Notifications</h4>
         </div>

@@ -58,6 +58,7 @@ $META_DESC = "Professional counseling services for students. Connect with licens
     </div>
   </div>
   <?php include(__DIR__ . "/partials/_scrolltop.php"); ?>
+  <script src="<?php echo htmlspecialchars($GCO_BASE); ?>assets/js/bootstrap.js"></script>
 </body>
 
 </html>

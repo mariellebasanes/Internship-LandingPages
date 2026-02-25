@@ -1,48 +1,76 @@
 <?php
 $assetsBase = isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets';
 ?>
-<section class="gco-hero">
-  <div class="gco-orb gco-orb-1" aria-hidden="true"></div>
-  <div class="gco-orb gco-orb-2" aria-hidden="true"></div>
-  <div class="gco-shape gco-shape-1" aria-hidden="true"></div>
-  <div class="gco-shape gco-shape-2" aria-hidden="true"></div>
+<section class="bg-gco overflow-hidden">
+  <div class="container py-20">
+    <div class="row align-items-center gy-10">
 
-  <div class="gco-hero-inner">
-    <div class="gco-hero-grid">
-      <div class="gco-hero-content">
-        <div class="gco-hero-badge gco-badge mb-4">Student Counseling &amp; Support</div>
-        <h1 class="gco-hero-title text-white mb-4">
+      <!-- Text content -->
+      <div class="col-lg-5">
+        <span class="badge bg-white bg-opacity-25 text-white border border-white border-opacity-50 fs-9 ls-2 text-uppercase fw-bold py-2 px-4 mb-6 d-inline-block">
+          Student Counseling &amp; Support
+        </span>
+        <h1 class="text-white fw-bolder fs-3x lh-sm mb-5">
           Your Mental Health<br>
-          <span class="text-white" style="opacity:.9">Matters</span>
+          <span class="text-white opacity-75">Matters</span>
         </h1>
-        <p class="gco-hero-desc mb-5">
+        <p class="text-white opacity-75 fs-5 mb-8">
           Professional counseling services tailored for students. Connect with licensed therapists who understand your journey and are here to support your wellbeing <strong class="text-white">every step of the way.</strong>
         </p>
-        <div class="d-flex flex-wrap gap-3 pt-3">
-          <a href="#services" class="gco-btn-white text-decoration-none">Schedule a Session</a>
-          <a href="#how-it-works" class="gco-btn-outline text-decoration-none">Learn More</a>
+        <div class="d-flex flex-wrap gap-3 mb-8">
+          <a href="#services"
+             class="gco-btn-primary d-inline-flex align-items-center gap-2
+                    rounded-pill px-6 py-3 bg-white fw-bold fs-6
+                    text-decoration-none shadow-sm">
+            <i class="ki-duotone ki-calendar-2 fs-5">
+              <span class="path1"></span><span class="path2"></span>
+              <span class="path3"></span><span class="path4"></span><span class="path5"></span>
+            </i>
+            Schedule a Session
+          </a>
+          <a href="#how-it-works"
+             class="d-inline-flex align-items-center gap-2 rounded-pill px-6 py-3
+                    border border-2 border-white bg-white bg-opacity-25
+                    text-white fw-bold fs-6 text-decoration-none">
+            Learn More
+            <i class="ki-duotone ki-arrow-right fs-5 text-white">
+              <span class="path1"></span><span class="path2"></span>
+            </i>
+          </a>
         </div>
-        <div class="d-flex align-items-center gap-3 pt-4 mt-4">
-          <div class="d-flex" style="margin-left: -0.75rem;">
-            <span class="rounded-circle bg-white bg-opacity-25 border border-2 border-white d-inline-flex align-items-center justify-content-center me-2" style="width:2.5rem;height:2.5rem;font-size:0.75rem;">&#9786;</span>
-            <span class="rounded-circle bg-white bg-opacity-25 border border-2 border-white d-inline-flex align-items-center justify-content-center me-2" style="width:2.5rem;height:2.5rem;font-size:0.75rem;">&#9733;</span>
-            <span class="rounded-circle bg-white bg-opacity-25 border border-2 border-white d-inline-flex align-items-center justify-content-center" style="width:2.5rem;height:2.5rem;font-size:0.75rem;">&#128170;</span>
-          </div>
-          <div class="small text-white" style="opacity:.9">
-            <div class="fw-semibold">Join 1000+ students</div>
-            <div style="opacity:.8">already taking care of their mental health</div>
-          </div>
-        </div>
-      </div>
-      <div class="gco-img-wrap">
-        <img src="<?= $assetsBase ?>/img/interview.jpg" alt="Student counseling session" class="img-fluid">
-      </div>
-    </div>
-  </div>
 
-  <div class="gco-wave">
-    <svg viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,0 C300,90 900,90 1200,0 L1200,120 L0,120 Z" fill="white"/>
-    </svg>
+        <div class="d-inline-flex align-items-center gap-4 bg-white bg-opacity-25 border border-2 border-white border-opacity-50 rounded-pill px-6 py-3">
+          <div class="symbol-group symbol-hover">
+            <div class="symbol symbol-35px symbol-circle">
+              <span class="symbol-label bg-primary border border-2 border-white">
+                <i class="ki-duotone ki-heart fs-6 text-white"><span class="path1"></span><span class="path2"></span></i>
+              </span>
+            </div>
+            <div class="symbol symbol-35px symbol-circle">
+              <span class="symbol-label bg-danger border border-2 border-white">
+                <i class="ki-duotone ki-medal-star fs-6 text-white"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
+              </span>
+            </div>
+            <div class="symbol symbol-35px symbol-circle">
+              <span class="symbol-label bg-primary border border-2 border-white">
+                <i class="ki-duotone ki-people fs-6 text-white"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></i>
+              </span>
+            </div>
+          </div>
+          <div>
+            <div class="text-white fw-bold fs-6 lh-1 mb-1">Join 1000+ students</div>
+            <div class="text-white fw-semibold fs-8">already taking care of their mental health</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero GIF -->
+      <div class="col-lg-7 d-flex justify-content-center">
+        <img src="<?= $assetsBase ?>/img/Animated-hero-image/mental health.gif"
+             alt="Student counseling session"
+             class="w-100 img-fluid">
+      </div>
+
+    </div>
   </div>
 </section>

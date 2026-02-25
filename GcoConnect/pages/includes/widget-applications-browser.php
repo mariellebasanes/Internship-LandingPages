@@ -6,9 +6,9 @@
             <div class="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-35px h-35px"
                 data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent"
                 data-kt-menu-placement="bottom-start">
-                <img src="/assets/img/logo/icon-paraverse.svg" class="w-100">
+                <img src="/assets/img/logo/icon-paraverse.svg" class="img-fluid">
             </div>
-            <div class="menu menu-sub menu-sub-dropdown menu-column w-100 w-sm-500px" data-kt-menu="true">
+            <div class="menu menu-sub menu-sub-dropdown menu-column w-sm-500px" data-kt-menu="true">
                 <div class="card">
                     <div class="card-header">
                         <div class="card-title">Paraverse Applications</div>

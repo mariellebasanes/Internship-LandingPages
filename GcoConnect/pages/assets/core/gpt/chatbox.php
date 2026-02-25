@@ -4,7 +4,7 @@
         <div class="h-100">
             <div class="bg-dark">
                 <div class="card-header">
-                    <div class="d-flex justify-content-between align-items-start w-100 py-7">
+                    <div class="d-flex justify-content-between align-items-start py-7">
                         <div class="d-flex align-items-center">
                             <img class="h-40px me-4" src="https://edith.feutech.edu.ph/assets/img/logo.png">
                             <div>
