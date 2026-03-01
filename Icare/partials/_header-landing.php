@@ -2,13 +2,19 @@
 $ICARE_BASE = defined('ICARE_BASE') ? ICARE_BASE : '/Icare/Icare';
 $ICARE_HOME = isset($ICARE_HOME) ? $ICARE_HOME : $ICARE_BASE . '/';
 ?>
-<div id="kt_app_header" class="app-header bg-white" data-kt-sticky="true" data-kt-sticky-activate="{default: true, lg: true}" data-kt-sticky-name="app-header-minimize" data-kt-sticky-offset="{default: '200px', lg: '0'}" data-kt-sticky-animation="false">
+<!-- Custom variables -->
+<link rel="stylesheet" href="<?php echo htmlspecialchars($ICARE_BASE); ?>/assets/custom-palette.css">
+<style>
+  /* Premium Header transition */
+  #kt_app_header { transition: background-color 0.3s ease, box-shadow 0.3s ease; }
+</style>
+<div id="kt_app_header" class="app-header bg-white shadow-sm" data-kt-sticky="true" data-kt-sticky-activate="{default: true, lg: true}" data-kt-sticky-name="app-header-minimize" data-kt-sticky-offset="{default: '200px', lg: '0'}" data-kt-sticky-animation="false">
   <div class="app-container container-xxl d-flex align-items-stretch justify-content-between" id="kt_app_header_container">
     <div class="app-navbar flex-shrink-0">
       <a href="<?php echo htmlspecialchars($ICARE_HOME); ?>" class="d-flex align-items-center" onclick="typeof KTApp !== 'undefined' && KTApp.showPageLoading && KTApp.showPageLoading()">
-        <h1 class="mb-0">
-          <img src="<?php echo htmlspecialchars($ICARE_BASE); ?>/assets/img/logo/Logo.svg" alt="iCare" class="h-25px">
-          <span class="fw-bolder text-primary d-none">iCare</span>
+        <h1 class="mb-0 d-flex align-items-center gap-2">
+          <img src="<?php echo htmlspecialchars($ICARE_BASE); ?>/assets/img/logo/Logo.svg" alt="iCare" class="h-30px">
+          <span class="fw-bolder fs-3 text-icare-green">iCare</span>
         </h1>
       </a>
     </div>

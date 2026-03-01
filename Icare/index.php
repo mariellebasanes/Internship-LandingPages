@@ -5,13 +5,14 @@
 define('MBG', TRUE);
 
 // Detect assets base path from filesystem so CSS/JS/images load in any folder (e.g. iCare-Landing-Page/Icare/)
-$doc_root = rtrim(str_replace('\\', '/', (string) $_SERVER['DOCUMENT_ROOT']), '/');
+$doc_root = rtrim(str_replace('\\', '/', (string)$_SERVER['DOCUMENT_ROOT']), '/');
 $icare_dir = rtrim(str_replace('\\', '/', __DIR__), '/');
 if ($doc_root !== '' && strpos($icare_dir, $doc_root) === 0) {
   $base_path = substr($icare_dir, strlen($doc_root));
   define('ICARE_BASE', $base_path === '' ? '' : $base_path);
-} else {
-  $script_dir = dirname((string) $_SERVER['SCRIPT_NAME']);
+}
+else {
+  $script_dir = dirname((string)$_SERVER['SCRIPT_NAME']);
   $script_dir = $script_dir === '/' || $script_dir === '\\' ? '' : rtrim(str_replace('\\', '/', $script_dir), '/');
   define('ICARE_BASE', $script_dir);
 }
@@ -49,16 +50,13 @@ $ICARE_PARTIALS = $icare_root . '/partials';
         <div class="app-main flex-column flex-row-fluid" id="kt_app_main">
           <div class="d-flex flex-column flex-column-fluid">
             <main>
-              <?php include $ICARE_PARTIALS . '/_index-hero.php'; ?>
-              <div class="app-container container-xxl">
-                <?php include $ICARE_PARTIALS . '/_index-about.php'; ?>
-                <?php include $ICARE_PARTIALS . '/_index-services.php'; ?>
-                <?php include $ICARE_PARTIALS . '/_index-tutorial.php'; ?>
-                <?php include $ICARE_PARTIALS . '/_index-faculties.php'; ?>
-                <?php include $ICARE_PARTIALS . '/_index-feedback.php'; ?>
-                <?php include $ICARE_PARTIALS . '/_index-faq.php'; ?>
-                <?php include $ICARE_PARTIALS . '/_index-learnmore.php'; ?>
-              </div>
+              <?php include $ICARE_PARTIALS . '/_index-v2-hero.php'; ?>
+              <?php include $ICARE_PARTIALS . '/_index-v2-about.php'; ?>
+              <?php include $ICARE_PARTIALS . '/_index-v2-services.php'; ?>
+              <?php include $ICARE_PARTIALS . '/_index-v2-directory.php'; ?>
+              <?php include $ICARE_PARTIALS . '/_index-v2-events.php'; ?>
+              <?php include $ICARE_PARTIALS . '/_index-v2-testimonials.php'; ?>
+              <?php include $ICARE_PARTIALS . '/_index-v2-cta.php'; ?>
             </main>
           </div>
           <?php include $ICARE_PARTIALS . '/_footer-landing.php'; ?>

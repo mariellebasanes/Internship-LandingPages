@@ -34,25 +34,25 @@ $META_DESC = "Professional counseling services for students. Connect with licens
               <div class="app-container container-xxl">
                 <div id="kt_app_content" class="flex-column-fluid">
                   <?php
-                  include(__DIR__ . "/pages/view/index-section-hero-gco.php");
-                  include(__DIR__ . "/pages/view/index-section-services-gco.php");
-                  include(__DIR__ . "/pages/view/index-section-how-it-works-gco.php");
-                  include(__DIR__ . "/pages/view/index-section-team-gco.php");
-                  include(__DIR__ . "/pages/view/index-section-psychological-gco.php");
-                  include(__DIR__ . "/pages/view/index-section-purpose-gco.php");
-                  include(__DIR__ . "/pages/view/index-section-special-programs-gco.php");
-                  include(__DIR__ . "/pages/view/index-section-faq-gco.php");
-                  include(__DIR__ . "/pages/view/index-section-cta-gco.php");
-                  ?>
+include(__DIR__ . "/pages/index-section-hero-gco.php");
+include(__DIR__ . "/pages/index-section-services-gco.php");
+include(__DIR__ . "/pages/index-section-how-it-works-gco.php");
+include(__DIR__ . "/pages/index-section-team-gco.php");
+include(__DIR__ . "/pages/index-section-psychological-gco.php");
+include(__DIR__ . "/pages/index-section-purpose-gco.php");
+include(__DIR__ . "/pages/index-section-special-programs-gco.php");
+include(__DIR__ . "/pages/index-section-faq-gco.php");
+include(__DIR__ . "/pages/index-section-cta-gco.php");
+?>
                 </div>
               </div>
             </main>
           </div>
           <?php
-          $base = isset($GCO_BASE) ? $GCO_BASE : '';
-          $assets_base = (isset($GCO_BASE) ? $GCO_BASE . 'pages/assets' : 'assets');
-          include(__DIR__ . "/../GcoConnect/partials/_footer.php");
-          ?>
+$base = isset($GCO_BASE) ? $GCO_BASE : '';
+$assets_base = (isset($GCO_BASE) ? $GCO_BASE . 'pages/assets' : 'assets');
+include(__DIR__ . "/../GcoConnect/partials/_footer.php");
+?>
         </div>
       </div>
     </div>

@@ -280,3 +280,55 @@ details[open] > summary.accordion-button::after {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+/* ── GCO Section Background Enhancements ───────────────────────────────── */
+.gco-section-services {
+  position: relative;
+  z-index: 1;
+}
+.gco-section-services::before {
+  content: '';
+  position: absolute;
+  top: -10%; left: -5%;
+  width: 600px; height: 600px;
+  background-image: url('../svg/blobs/blob%201.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.15;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.gco-section-faq {
+  position: relative;
+  z-index: 1;
+}
+.gco-section-faq::before {
+  content: '';
+  position: absolute;
+  top: 20%; right: -5%;
+  width: 500px; height: 500px;
+  background-image: url('../svg/blobs/blob%202.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.15;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.gco-section-purpose {
+  position: relative;
+  z-index: 1;
+}
+.gco-section-purpose::before {
+  content: '';
+  position: absolute;
+  bottom: -15%; left: 0%;
+  width: 700px; height: 700px;
+  background-image: url('../svg/blobs/blob%203.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.15;
+  z-index: -1;
+  pointer-events: none;
+}
