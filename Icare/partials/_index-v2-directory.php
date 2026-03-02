@@ -1,7 +1,7 @@
 <?php
 $BASE = isset($ICARE_BASE) ? $ICARE_BASE : '/Icare/Icare';
 ?>
-<section id="directory" class="py-15 py-lg-20 position-relative" style="background-color: var(--icare-green);">
+<section id="directory" class="py-15 py-lg-20 position-relative bg-geometric bg-geometric-dark bg-shape-1 section-angle-bottom" style="background-color: var(--icare-green);">
   <div class="app-container container-xxl">
     
     <!-- Section Header -->
@@ -43,87 +43,102 @@ $BASE = isset($ICARE_BASE) ? $ICARE_BASE : '/Icare/Icare';
                 <div class="row g-6 g-lg-10">
                     <!-- Faculty 1 -->
                     <div class="col-md-6 col-lg-4">
-                        <div class="card h-100 border-0 shadow-sm hover-elevate-up transition-all rounded-4 overflow-hidden bg-white">
-                            <!-- Card Body -->
-                            <div class="card-body p-8 p-lg-10 text-center">
-                                <div class="symbol symbol-150px symbol-circle mb-6 bg-light">
-                                    <img src="<?php echo htmlspecialchars($BASE); ?>/assets/img/team/team-mbgarcia.png" class="object-fit-cover shadow-sm border border-4 border-white" alt="Dr. Macario G. Garcia" />
-                                </div>
-                                
-                                <h3 class="fs-4 fw-bolder text-dark mb-1">Dr. Macario B. Garcia</h3>
-                                <span class="fs-6 fw-bold mb-4 d-block" style="color: var(--icare-green);">Program Director</span>
-                                
-                                <div class="d-flex align-items-center justify-content-center gap-2 mb-8">
-                                    <a href="#" class="btn btn-icon btn-light-success btn-sm rounded-circle"><i class="ki-outline ki-sms fs-5"></i></a>
-                                    <a href="#" class="btn btn-icon btn-light-primary btn-sm rounded-circle"><i class="ki-outline ki-linkedin fs-5"></i></a>
-                                </div>
-
-                                <div class="d-flex justify-content-center flex-wrap gap-2 mb-0">
-                                    <span class="badge badge-light-success px-3 py-2 fs-8 fw-bolder rounded-pill">Mathematics</span>
-                                    <span class="badge badge-light-success px-3 py-2 fs-8 fw-bolder rounded-pill">Physics</span>
-                                    <span class="badge badge-light-success px-3 py-2 fs-8 fw-bolder rounded-pill">Statistics</span>
+                        <div class="card h-100 border-0 shadow-sm hover-elevate-up rounded-4 bg-white" style="transition: all 0.3s ease; overflow: hidden;">
+                            <div class="w-100 position-relative" style="height: 250px; background: linear-gradient(135deg, var(--icare-green), #045234);">
+                                <!-- Decorative pattern overlay -->
+                                <div class="position-absolute w-100 h-100 opacity-25" style="background-image: radial-gradient(var(--icare-yellow) 1px, transparent 1px); background-size: 20px 20px;"></div>
+                                <div class="w-100 h-100 d-flex align-items-center justify-content-center position-absolute top-0 start-0 z-index-1">
+                                    <i class="ki-outline ki-profile-user text-white opacity-50" style="font-size: 5rem;"></i>
                                 </div>
                             </div>
-                            <div class="card-footer border-top border-gray-100 p-4 text-center bg-light">
-                                <a href="#" class="btn btn-sm btn-link text-success fw-bold p-0">View Full Profile</a>
+                            <div class="card-body p-6 p-lg-8 d-flex flex-column text-start">
+                                <span class="badge px-2 py-1 fs-9 fw-bolder text-uppercase tracking-wider mb-2 align-self-start" style="background-color: rgba(3, 110, 69, 0.1); color: var(--icare-green);">Program Director</span>
+                                <h3 class="fs-4 fw-bolder text-dark mb-1">Anonymous Mentor 1</h3>
+                                <div class="text-gray-600 fs-7 mb-4">anonymous1@email.com</div>
+
+                                <hr class="text-gray-200 my-0 mb-4">
+
+                                <div>
+                                    <h4 class="fs-8 fw-bolder text-dark text-uppercase tracking-wider mb-2">Assigned Programs</h4>
+                                    <div class="d-flex flex-wrap gap-2 mb-0">
+                                        <span class="badge badge-light text-dark px-2 py-1 fs-8 fw-bold">Mathematics</span>
+                                        <span class="badge badge-light text-dark px-2 py-1 fs-8 fw-bold">Physics</span>
+                                        <span class="badge badge-light text-dark px-2 py-1 fs-8 fw-bold">Statistics</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer border-0 p-6 p-lg-8 pt-0 bg-transparent">
+                                <a href="#" class="btn w-100 py-3 fw-bold fs-6" style="background-color: rgba(3, 110, 69, 0.1); color: var(--icare-green);">
+                                    <i class="ki-outline ki-calendar fs-4 me-2" style="color: var(--icare-green);"></i> Get in Touch
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Faculty 2 -->
                     <div class="col-md-6 col-lg-4">
-                        <div class="card h-100 border-0 shadow-sm hover-elevate-up transition-all rounded-4 overflow-hidden bg-white">
-                            <!-- Card Body -->
-                            <div class="card-body p-8 p-lg-10 text-center">
-                                <div class="symbol symbol-150px symbol-circle mb-6 bg-light">
-                                    <img src="<?php echo htmlspecialchars($BASE); ?>/assets/img/team/team-radao.jpg" class="object-fit-cover shadow-sm border border-4 border-white" alt="Prof. Rossana A. Adao" />
-                                </div>
-                                
-                                <h3 class="fs-4 fw-bolder text-dark mb-1">Prof. Rossana A. Adao</h3>
-                                <span class="fs-6 fw-bold mb-4 d-block" style="color: var(--icare-green);">Lead Academic Tutor</span>
-                                
-                                <div class="d-flex align-items-center justify-content-center gap-2 mb-8">
-                                    <a href="#" class="btn btn-icon btn-light-success btn-sm rounded-circle"><i class="ki-outline ki-sms fs-5"></i></a>
-                                    <a href="#" class="btn btn-icon btn-light-primary btn-sm rounded-circle"><i class="ki-outline ki-linkedin fs-5"></i></a>
-                                </div>
-
-                                <div class="d-flex justify-content-center flex-wrap gap-2 mb-0">
-                                    <span class="badge badge-light-success px-3 py-2 fs-8 fw-bolder rounded-pill">Computer Science</span>
-                                    <span class="badge badge-light-success px-3 py-2 fs-8 fw-bolder rounded-pill">Programming</span>
-                                    <span class="badge badge-light-success px-3 py-2 fs-8 fw-bolder rounded-pill">Data Structures</span>
+                        <div class="card h-100 border-0 shadow-sm hover-elevate-up rounded-4 bg-white" style="transition: all 0.3s ease; overflow: hidden;">
+                            <div class="w-100 position-relative" style="height: 250px; background: linear-gradient(135deg, var(--icare-green), #045234);">
+                                <!-- Decorative pattern overlay -->
+                                <div class="position-absolute w-100 h-100 opacity-25" style="background-image: radial-gradient(var(--icare-yellow) 1px, transparent 1px); background-size: 20px 20px;"></div>
+                                <div class="w-100 h-100 d-flex align-items-center justify-content-center position-absolute top-0 start-0 z-index-1">
+                                    <i class="ki-outline ki-profile-user text-white opacity-50" style="font-size: 5rem;"></i>
                                 </div>
                             </div>
-                            <div class="card-footer border-top border-gray-100 p-4 text-center bg-light">
-                                <a href="#" class="btn btn-sm btn-link text-success fw-bold p-0">View Full Profile</a>
+                            <div class="card-body p-6 p-lg-8 d-flex flex-column text-start">
+                                <span class="badge px-2 py-1 fs-9 fw-bolder text-uppercase tracking-wider mb-2 align-self-start" style="background-color: rgba(3, 110, 69, 0.1); color: var(--icare-green);">Lead Academic Tutor</span>
+                                <h3 class="fs-4 fw-bolder text-dark mb-1">Anonymous Mentor 2</h3>
+                                <div class="text-gray-600 fs-7 mb-4">anonymous2@email.com</div>
+
+                                <hr class="text-gray-200 my-0 mb-4">
+
+                                <div>
+                                    <h4 class="fs-8 fw-bolder text-dark text-uppercase tracking-wider mb-2">Assigned Programs</h4>
+                                    <div class="d-flex flex-wrap gap-2 mb-0">
+                                        <span class="badge badge-light text-dark px-2 py-1 fs-8 fw-bold">Computer Science</span>
+                                        <span class="badge badge-light text-dark px-2 py-1 fs-8 fw-bold">Programming</span>
+                                        <span class="badge badge-light text-dark px-2 py-1 fs-8 fw-bold">Data Structures</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer border-0 p-6 p-lg-8 pt-0 bg-transparent">
+                                <a href="#" class="btn w-100 py-3 fw-bold fs-6" style="background-color: rgba(3, 110, 69, 0.1); color: var(--icare-green);">
+                                    <i class="ki-outline ki-calendar fs-4 me-2" style="color: var(--icare-green);"></i> Get in Touch
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Faculty 3 -->
                     <div class="col-md-6 col-lg-4">
-                        <div class="card h-100 border-0 shadow-sm hover-elevate-up transition-all rounded-4 overflow-hidden bg-white">
-                            <!-- Card Body -->
-                            <div class="card-body p-8 p-lg-10 text-center">
-                                <div class="symbol symbol-150px symbol-circle mb-6 bg-light">
-                                    <img src="<?php echo htmlspecialchars($BASE); ?>/assets/img/team/team-onualat.png" class="object-fit-cover shadow-sm border border-4 border-white" alt="Dr. Oscar Nualat" />
-                                </div>
-                                
-                                <h3 class="fs-4 fw-bolder text-dark mb-1">Dr. Oscar Nualat</h3>
-                                <span class="fs-6 fw-bold mb-4 d-block" style="color: var(--icare-green);">Academic Coordinator</span>
-                                
-                                <div class="d-flex align-items-center justify-content-center gap-2 mb-8">
-                                    <a href="#" class="btn btn-icon btn-light-success btn-sm rounded-circle"><i class="ki-outline ki-sms fs-5"></i></a>
-                                    <a href="#" class="btn btn-icon btn-light-primary btn-sm rounded-circle"><i class="ki-outline ki-linkedin fs-5"></i></a>
-                                </div>
-
-                                <div class="d-flex justify-content-center flex-wrap gap-2 mb-0">
-                                    <span class="badge badge-light-success px-3 py-2 fs-8 fw-bolder rounded-pill">Database Systems</span>
-                                    <span class="badge badge-light-success px-3 py-2 fs-8 fw-bolder rounded-pill">Information Systems</span>
-                                    <span class="badge badge-light-success px-3 py-2 fs-8 fw-bolder rounded-pill">Web Dev</span>
+                        <div class="card h-100 border-0 shadow-sm hover-elevate-up rounded-4 bg-white" style="transition: all 0.3s ease; overflow: hidden;">
+                            <div class="w-100 position-relative" style="height: 250px; background: linear-gradient(135deg, var(--icare-green), #045234);">
+                                <!-- Decorative pattern overlay -->
+                                <div class="position-absolute w-100 h-100 opacity-25" style="background-image: radial-gradient(var(--icare-yellow) 1px, transparent 1px); background-size: 20px 20px;"></div>
+                                <div class="w-100 h-100 d-flex align-items-center justify-content-center position-absolute top-0 start-0 z-index-1">
+                                    <i class="ki-outline ki-profile-user text-white opacity-50" style="font-size: 5rem;"></i>
                                 </div>
                             </div>
-                            <div class="card-footer border-top border-gray-100 p-4 text-center bg-light">
-                                <a href="#" class="btn btn-sm btn-link text-success fw-bold p-0">View Full Profile</a>
+                            <div class="card-body p-6 p-lg-8 d-flex flex-column text-start">
+                                <span class="badge px-2 py-1 fs-9 fw-bolder text-uppercase tracking-wider mb-2 align-self-start" style="background-color: rgba(3, 110, 69, 0.1); color: var(--icare-green);">Academic Coordinator</span>
+                                <h3 class="fs-4 fw-bolder text-dark mb-1">Anonymous Mentor 3</h3>
+                                <div class="text-gray-600 fs-7 mb-4">anonymous3@email.com</div>
+
+                                <hr class="text-gray-200 my-0 mb-4">
+
+                                <div>
+                                    <h4 class="fs-8 fw-bolder text-dark text-uppercase tracking-wider mb-2">Assigned Programs</h4>
+                                    <div class="d-flex flex-wrap gap-2 mb-0">
+                                        <span class="badge badge-light text-dark px-2 py-1 fs-8 fw-bold">Database Systems</span>
+                                        <span class="badge badge-light text-dark px-2 py-1 fs-8 fw-bold">Information Systems</span>
+                                        <span class="badge badge-light text-dark px-2 py-1 fs-8 fw-bold">Web Dev</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer border-0 p-6 p-lg-8 pt-0 bg-transparent">
+                                <a href="#" class="btn w-100 py-3 fw-bold fs-6" style="background-color: rgba(3, 110, 69, 0.1); color: var(--icare-green);">
+                                    <i class="ki-outline ki-calendar fs-4 me-2" style="color: var(--icare-green);"></i> Get in Touch
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -135,84 +150,99 @@ $BASE = isset($ICARE_BASE) ? $ICARE_BASE : '/Icare/Icare';
                 <div class="row g-6 g-lg-10">
                     <!-- Faculty 4 -->
                     <div class="col-md-6 col-lg-4">
-                        <div class="card h-100 border-0 shadow-sm hover-elevate-up transition-all rounded-4 overflow-hidden bg-white">
-                            <!-- Card Body -->
-                            <div class="card-body p-8 p-lg-10 text-center">
-                                <div class="symbol symbol-150px symbol-circle mb-6 bg-light">
-                                    <img src="<?php echo htmlspecialchars($BASE); ?>/assets/img/team/team-epbacasmo.jpg" class="object-fit-cover shadow-sm border border-4 border-white" alt="E. Bacasmo" />
-                                </div>
-                                
-                                <h3 class="fs-4 fw-bolder text-dark mb-1">E. Bacasmo</h3>
-                                <span class="fs-6 fw-bold mb-4 d-block" style="color: var(--icare-green);">Senior Reviewer</span>
-                                
-                                <div class="d-flex align-items-center justify-content-center gap-2 mb-8">
-                                    <a href="#" class="btn btn-icon btn-light-success btn-sm rounded-circle"><i class="ki-outline ki-sms fs-5"></i></a>
-                                    <a href="#" class="btn btn-icon btn-light-primary btn-sm rounded-circle"><i class="ki-outline ki-linkedin fs-5"></i></a>
-                                </div>
-
-                                <div class="d-flex justify-content-center flex-wrap gap-2 mb-0">
-                                    <span class="badge badge-light-success px-3 py-2 fs-8 fw-bolder rounded-pill">Electronics</span>
-                                    <span class="badge badge-light-success px-3 py-2 fs-8 fw-bolder rounded-pill">Circuits</span>
+                        <div class="card h-100 border-0 shadow-sm hover-elevate-up rounded-4 bg-white" style="transition: all 0.3s ease; overflow: hidden;">
+                            <div class="w-100 position-relative" style="height: 250px; background: linear-gradient(135deg, var(--icare-green), #045234);">
+                                <!-- Decorative pattern overlay -->
+                                <div class="position-absolute w-100 h-100 opacity-25" style="background-image: radial-gradient(var(--icare-yellow) 1px, transparent 1px); background-size: 20px 20px;"></div>
+                                <div class="w-100 h-100 d-flex align-items-center justify-content-center position-absolute top-0 start-0 z-index-1">
+                                    <i class="ki-outline ki-profile-user text-white opacity-50" style="font-size: 5rem;"></i>
                                 </div>
                             </div>
-                            <div class="card-footer border-top border-gray-100 p-4 text-center bg-light">
-                                <a href="#" class="btn btn-sm btn-link text-success fw-bold p-0">View Full Profile</a>
+                            <div class="card-body p-6 p-lg-8 d-flex flex-column text-start">
+                                <span class="badge px-2 py-1 fs-9 fw-bolder text-uppercase tracking-wider mb-2 align-self-start" style="background-color: rgba(3, 110, 69, 0.1); color: var(--icare-green);">Senior Reviewer</span>
+                                <h3 class="fs-4 fw-bolder text-dark mb-1">Anonymous Mentor 4</h3>
+                                <div class="text-gray-600 fs-7 mb-4">anonymous4@email.com</div>
+
+                                <hr class="text-gray-200 my-0 mb-4">
+
+                                <div>
+                                    <h4 class="fs-8 fw-bolder text-dark text-uppercase tracking-wider mb-2">Assigned Programs</h4>
+                                    <div class="d-flex flex-wrap gap-2 mb-0">
+                                        <span class="badge badge-light text-dark px-2 py-1 fs-8 fw-bold">Electronics</span>
+                                        <span class="badge badge-light text-dark px-2 py-1 fs-8 fw-bold">Circuits</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer border-0 p-6 p-lg-8 pt-0 bg-transparent">
+                                <a href="#" class="btn w-100 py-3 fw-bold fs-6" style="background-color: rgba(3, 110, 69, 0.1); color: var(--icare-green);">
+                                    <i class="ki-outline ki-calendar fs-4 me-2" style="color: var(--icare-green);"></i> Get in Touch
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Faculty 5 -->
                     <div class="col-md-6 col-lg-4">
-                        <div class="card h-100 border-0 shadow-sm hover-elevate-up transition-all rounded-4 overflow-hidden bg-white">
-                            <!-- Card Body -->
-                            <div class="card-body p-8 p-lg-10 text-center">
-                                <div class="symbol symbol-150px symbol-circle mb-6 bg-light">
-                                    <img src="<?php echo htmlspecialchars($BASE); ?>/assets/img/team/team-vpfollosco.jpg" class="object-fit-cover shadow-sm border border-4 border-white" alt="V. Follosco" />
-                                </div>
-                                
-                                <h3 class="fs-4 fw-bolder text-dark mb-1">V. Follosco</h3>
-                                <span class="fs-6 fw-bold mb-4 d-block" style="color: var(--icare-green);">Review Specialist</span>
-                                
-                                <div class="d-flex align-items-center justify-content-center gap-2 mb-8">
-                                    <a href="#" class="btn btn-icon btn-light-success btn-sm rounded-circle"><i class="ki-outline ki-sms fs-5"></i></a>
-                                    <a href="#" class="btn btn-icon btn-light-primary btn-sm rounded-circle"><i class="ki-outline ki-linkedin fs-5"></i></a>
-                                </div>
-
-                                <div class="d-flex justify-content-center flex-wrap gap-2 mb-0">
-                                    <span class="badge badge-light-success px-3 py-2 fs-8 fw-bolder rounded-pill">Operations</span>
-                                    <span class="badge badge-light-success px-3 py-2 fs-8 fw-bolder rounded-pill">Management</span>
+                        <div class="card h-100 border-0 shadow-sm hover-elevate-up rounded-4 bg-white" style="transition: all 0.3s ease; overflow: hidden;">
+                            <div class="w-100 position-relative" style="height: 250px; background: linear-gradient(135deg, var(--icare-green), #045234);">
+                                <!-- Decorative pattern overlay -->
+                                <div class="position-absolute w-100 h-100 opacity-25" style="background-image: radial-gradient(var(--icare-yellow) 1px, transparent 1px); background-size: 20px 20px;"></div>
+                                <div class="w-100 h-100 d-flex align-items-center justify-content-center position-absolute top-0 start-0 z-index-1">
+                                    <i class="ki-outline ki-profile-user text-white opacity-50" style="font-size: 5rem;"></i>
                                 </div>
                             </div>
-                            <div class="card-footer border-top border-gray-100 p-4 text-center bg-light">
-                                <a href="#" class="btn btn-sm btn-link text-success fw-bold p-0">View Full Profile</a>
+                            <div class="card-body p-6 p-lg-8 d-flex flex-column text-start">
+                                <span class="badge px-2 py-1 fs-9 fw-bolder text-uppercase tracking-wider mb-2 align-self-start" style="background-color: rgba(3, 110, 69, 0.1); color: var(--icare-green);">Review Specialist</span>
+                                <h3 class="fs-4 fw-bolder text-dark mb-1">Anonymous Mentor 5</h3>
+                                <div class="text-gray-600 fs-7 mb-4">anonymous5@email.com</div>
+
+                                <hr class="text-gray-200 my-0 mb-4">
+
+                                <div>
+                                    <h4 class="fs-8 fw-bolder text-dark text-uppercase tracking-wider mb-2">Assigned Programs</h4>
+                                    <div class="d-flex flex-wrap gap-2 mb-0">
+                                        <span class="badge badge-light text-dark px-2 py-1 fs-8 fw-bold">Operations</span>
+                                        <span class="badge badge-light text-dark px-2 py-1 fs-8 fw-bold">Management</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer border-0 p-6 p-lg-8 pt-0 bg-transparent">
+                                <a href="#" class="btn w-100 py-3 fw-bold fs-6" style="background-color: rgba(3, 110, 69, 0.1); color: var(--icare-green);">
+                                    <i class="ki-outline ki-calendar fs-4 me-2" style="color: var(--icare-green);"></i> Get in Touch
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Faculty 6 -->
                     <div class="col-md-6 col-lg-4">
-                        <div class="card h-100 border-0 shadow-sm hover-elevate-up transition-all rounded-4 overflow-hidden bg-white">
-                            <!-- Card Body -->
-                            <div class="card-body p-8 p-lg-10 text-center">
-                                <div class="symbol symbol-150px symbol-circle mb-6 bg-light">
-                                    <img src="<?php echo htmlspecialchars($BASE); ?>/assets/img/team/team-jfventura.jpg" class="object-fit-cover shadow-sm border border-4 border-white" alt="J. Ventura" />
-                                </div>
-                                
-                                <h3 class="fs-4 fw-bolder text-dark mb-1">J. Ventura</h3>
-                                <span class="fs-6 fw-bold mb-4 d-block" style="color: var(--icare-green);">Academic Guide</span>
-                                
-                                <div class="d-flex align-items-center justify-content-center gap-2 mb-8">
-                                    <a href="#" class="btn btn-icon btn-light-success btn-sm rounded-circle"><i class="ki-outline ki-sms fs-5"></i></a>
-                                    <a href="#" class="btn btn-icon btn-light-primary btn-sm rounded-circle"><i class="ki-outline ki-linkedin fs-5"></i></a>
-                                </div>
-
-                                <div class="d-flex justify-content-center flex-wrap gap-2 mb-0">
-                                    <span class="badge badge-light-success px-3 py-2 fs-8 fw-bolder rounded-pill">IT Infrastructure</span>
-                                    <span class="badge badge-light-success px-3 py-2 fs-8 fw-bolder rounded-pill">Networking</span>
+                        <div class="card h-100 border-0 shadow-sm hover-elevate-up rounded-4 bg-white" style="transition: all 0.3s ease; overflow: hidden;">
+                            <div class="w-100 position-relative" style="height: 250px; background: linear-gradient(135deg, var(--icare-green), #045234);">
+                                <!-- Decorative pattern overlay -->
+                                <div class="position-absolute w-100 h-100 opacity-25" style="background-image: radial-gradient(var(--icare-yellow) 1px, transparent 1px); background-size: 20px 20px;"></div>
+                                <div class="w-100 h-100 d-flex align-items-center justify-content-center position-absolute top-0 start-0 z-index-1">
+                                    <i class="ki-outline ki-profile-user text-white opacity-50" style="font-size: 5rem;"></i>
                                 </div>
                             </div>
-                            <div class="card-footer border-top border-gray-100 p-4 text-center bg-light">
-                                <a href="#" class="btn btn-sm btn-link text-success fw-bold p-0">View Full Profile</a>
+                            <div class="card-body p-6 p-lg-8 d-flex flex-column text-start">
+                                <span class="badge px-2 py-1 fs-9 fw-bolder text-uppercase tracking-wider mb-2 align-self-start" style="background-color: rgba(3, 110, 69, 0.1); color: var(--icare-green);">Academic Guide</span>
+                                <h3 class="fs-4 fw-bolder text-dark mb-1">Anonymous Mentor 6</h3>
+                                <div class="text-gray-600 fs-7 mb-4">anonymous6@email.com</div>
+
+                                <hr class="text-gray-200 my-0 mb-4">
+
+                                <div>
+                                    <h4 class="fs-8 fw-bolder text-dark text-uppercase tracking-wider mb-2">Assigned Programs</h4>
+                                    <div class="d-flex flex-wrap gap-2 mb-0">
+                                        <span class="badge badge-light text-dark px-2 py-1 fs-8 fw-bold">IT Infrastructure</span>
+                                        <span class="badge badge-light text-dark px-2 py-1 fs-8 fw-bold">Networking</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer border-0 p-6 p-lg-8 pt-0 bg-transparent">
+                                <a href="#" class="btn w-100 py-3 fw-bold fs-6" style="background-color: rgba(3, 110, 69, 0.1); color: var(--icare-green);">
+                                    <i class="ki-outline ki-calendar fs-4 me-2" style="color: var(--icare-green);"></i> Get in Touch
+                                </a>
                             </div>
                         </div>
                     </div>

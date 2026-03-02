@@ -1,7 +1,7 @@
 <?php
 $BASE = isset($ICARE_BASE) ? $ICARE_BASE : '/Icare/Icare';
 ?>
-<section id="pillars" class="py-15 py-lg-20 position-relative" style="background-color: var(--icare-green);">
+<section id="pillars" class="py-15 py-lg-20 position-relative bg-geometric bg-geometric-dark bg-shape-1 section-angle-bottom" style="background-color: var(--icare-green);">
   <div class="app-container container-xxl">
     <!-- Section Header -->
     <div class="row justify-content-center mb-12 mb-lg-16">

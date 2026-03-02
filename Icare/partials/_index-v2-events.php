@@ -1,7 +1,7 @@
 <?php
 $BASE = isset($ICARE_BASE) ? $ICARE_BASE : '/Icare/Icare';
 ?>
-<section id="events" class="py-15 py-lg-20 bg-white">
+<section id="events" class="py-15 py-lg-20 bg-white bg-glow-green bg-geometric bg-geometric-light bg-events-icons section-angle-bottom">
   <div class="app-container container-xxl">
     
     <!-- Section Header -->
@@ -33,49 +33,31 @@ $BASE = isset($ICARE_BASE) ? $ICARE_BASE : '/Icare/Icare';
         <!-- Event 1 -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm hover-elevate-up transition-all rounded-4 overflow-hidden bg-white">
+                <!-- Header Image Placeholder -->
+                <div class="w-100 d-flex align-items-center justify-content-center" style="height: 200px; background: linear-gradient(135deg, rgba(15, 137, 72, 0.15), rgba(253, 188, 23, 0.15));">
+                     <i class="ki-outline ki-picture text-muted fs-2hx opacity-50"></i>
+                </div>
+                
                 <div class="card-body p-6 p-lg-8 d-flex flex-column">
-                    <!-- Date & Type Badge -->
-                    <div class="d-flex align-items-center mb-6">
-                        <div class="d-flex flex-column align-items-center justify-content-center rounded-3 px-4 py-3 me-5 bg-light-warning border border-warning border-dashed">
-                            <span class="fs-2 fw-bolder text-warning">15</span>
-                            <span class="fs-7 fw-bolder text-uppercase text-warning">Oct</span>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <span class="badge badge-light-success fw-bolder px-3 py-1 mb-2 align-self-start">Workshop</span>
-                            <span class="fs-7 fw-bold text-muted d-flex align-items-center">
-                                <i class="ki-outline ki-time fs-6 me-1"></i> 2:00 PM - 4:00 PM
-                            </span>
-                        </div>
-                    </div>
+                    <!-- Badge -->
+                    <span class="badge px-3 py-2 fs-8 fw-bolder text-uppercase tracking-wider mb-4 align-self-start" style="background-color: rgba(15, 137, 72, 0.1); color: var(--icare-green);">UPCOMING WORKSHOP</span>
                     
-                    <a href="#" class="fs-3 fw-bolder text-dark text-hover-success lh-base mb-3 d-block">
+                    <!-- Title -->
+                    <a href="#" class="fs-4 fw-bolder text-dark text-hover-success lh-base mb-6 d-block">
                         Advanced Data Structures Workshop
                     </a>
                     
-                    <p class="fs-6 text-muted mb-6 flex-grow-1">
-                        An intensive hands-on session focusing on advanced tree topologies and graph algorithms.
-                    </p>
-
-                    <div class="d-flex align-items-center text-gray-800 fs-7 fw-bold mt-auto pe-2">
-                        <div class="w-30px h-30px rounded bg-light d-flex align-items-center justify-content-center me-3">
-                            <i class="ki-outline ki-geolocation fs-5" style="color: var(--icare-green);"></i>
+                    <!-- Details List -->
+                    <div class="d-flex flex-column gap-3 mt-auto">
+                        <div class="d-flex align-items-center text-muted fs-7 fw-bold">
+                            <i class="ki-outline ki-calendar text-gray-500 fs-4 me-3"></i>
+                            Tue • October 15, 2024 • 02:00 PM
                         </div>
-                        FEU Tech Building, Room 502
-                    </div>
-                </div>
-                <div class="card-footer border-top border-gray-100 p-6 p-lg-8 bg-light d-flex justify-content-between align-items-center flex-wrap gap-3">
-                    <div class="symbol-group symbol-hover">
-                        <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Dr. Maria Santos">
-                            <img alt="Pic" src="<?php echo htmlspecialchars($BASE); ?>/assets/svg/blank-image.svg" />
-                        </div>
-                        <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Prof. James Rodriguez">
-                            <img alt="Pic" src="<?php echo htmlspecialchars($BASE); ?>/assets/svg/blank-image.svg" />
-                        </div>
-                        <div class="symbol symbol-35px symbol-circle">
-                            <span class="symbol-label bg-light-success text-success fs-8 fw-bold">+3</span>
+                        <div class="d-flex align-items-center text-muted fs-7 fw-bold">
+                            <i class="ki-outline ki-geolocation text-gray-500 fs-4 me-3"></i>
+                            FEU Tech Building, Room 502
                         </div>
                     </div>
-                    <a href="#" class="btn btn-sm btn-primary fw-bolder" style="background-color: var(--icare-green); border-color: var(--icare-green);">Register</a>
                 </div>
             </div>
         </div>
@@ -83,45 +65,31 @@ $BASE = isset($ICARE_BASE) ? $ICARE_BASE : '/Icare/Icare';
         <!-- Event 2 -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm hover-elevate-up transition-all rounded-4 overflow-hidden bg-white">
+                <!-- Header Image Placeholder -->
+                <div class="w-100 d-flex align-items-center justify-content-center" style="height: 200px; background: linear-gradient(135deg, rgba(253, 188, 23, 0.15), rgba(15, 137, 72, 0.15));">
+                     <i class="ki-outline ki-picture text-muted fs-2hx opacity-50"></i>
+                </div>
+                
                 <div class="card-body p-6 p-lg-8 d-flex flex-column">
-                    <div class="d-flex align-items-center mb-6">
-                        <div class="d-flex flex-column align-items-center justify-content-center rounded-3 px-4 py-3 me-5 bg-light-success border border-success border-dashed">
-                            <span class="fs-2 fw-bolder text-success">22</span>
-                            <span class="fs-7 fw-bolder text-uppercase text-success">Oct</span>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <span class="badge badge-light-warning fw-bolder px-3 py-1 mb-2 align-self-start text-dark">Review Session</span>
-                            <span class="fs-7 fw-bold text-muted d-flex align-items-center">
-                                <i class="ki-outline ki-time fs-6 me-1"></i> 10:00 AM - 12:00 PM
-                            </span>
-                        </div>
-                    </div>
+                    <!-- Badge -->
+                    <span class="badge px-3 py-2 fs-8 fw-bolder text-uppercase tracking-wider mb-4 align-self-start" style="background-color: rgba(253, 188, 23, 0.1); color: var(--icare-yellow);">REVIEW SESSION</span>
                     
-                    <a href="#" class="fs-3 fw-bolder text-dark text-hover-success lh-base mb-3 d-block">
+                    <!-- Title -->
+                    <a href="#" class="fs-4 fw-bolder text-dark text-hover-warning lh-base mb-6 d-block">
                         Midterm Examination Review: Calculus 2
                     </a>
                     
-                    <p class="fs-6 text-muted mb-6 flex-grow-1">
-                        Comprehensive review of integration techniques and applications of definite integrals.
-                    </p>
-
-                    <div class="d-flex align-items-center text-gray-800 fs-7 fw-bold mt-auto pe-2">
-                        <div class="w-30px h-30px rounded bg-light d-flex align-items-center justify-content-center me-3">
-                            <i class="ki-outline ki-monitor-mobile fs-5" style="color: var(--icare-yellow);"></i>
+                    <!-- Details List -->
+                    <div class="d-flex flex-column gap-3 mt-auto">
+                        <div class="d-flex align-items-center text-muted fs-7 fw-bold">
+                            <i class="ki-outline ki-calendar text-gray-500 fs-4 me-3"></i>
+                            Tue • October 22, 2024 • 10:00 AM
                         </div>
-                        Virtual Session (Zoom)
-                    </div>
-                </div>
-                <div class="card-footer border-top border-gray-100 p-6 p-lg-8 bg-light d-flex justify-content-between align-items-center flex-wrap gap-3">
-                    <div class="symbol-group symbol-hover">
-                        <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Dr. Anna Lim">
-                            <img alt="Pic" src="<?php echo htmlspecialchars($BASE); ?>/assets/svg/blank-image.svg" />
-                        </div>
-                        <div class="symbol symbol-35px symbol-circle">
-                            <span class="symbol-label bg-light-warning text-dark fs-8 fw-bold">+12</span>
+                        <div class="d-flex align-items-center text-muted fs-7 fw-bold">
+                            <i class="ki-outline ki-geolocation text-gray-500 fs-4 me-3"></i>
+                            Virtual Session (Zoom)
                         </div>
                     </div>
-                    <a href="#" class="btn btn-sm btn-light-success fw-bolder">Join Link</a>
                 </div>
             </div>
         </div>
@@ -129,45 +97,31 @@ $BASE = isset($ICARE_BASE) ? $ICARE_BASE : '/Icare/Icare';
         <!-- Event 3 -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm hover-elevate-up transition-all rounded-4 overflow-hidden bg-white">
+                <!-- Header Image Placeholder -->
+                <div class="w-100 d-flex align-items-center justify-content-center" style="height: 200px; background: linear-gradient(135deg, rgba(80, 205, 137, 0.15), rgba(15, 137, 72, 0.15));">
+                     <i class="ki-outline ki-picture text-muted fs-2hx opacity-50"></i>
+                </div>
+                
                 <div class="card-body p-6 p-lg-8 d-flex flex-column">
-                    <div class="d-flex align-items-center mb-6">
-                        <div class="d-flex flex-column align-items-center justify-content-center rounded-3 px-4 py-3 me-5 bg-light-primary border border-primary border-dashed">
-                            <span class="fs-2 fw-bolder text-primary">05</span>
-                            <span class="fs-7 fw-bolder text-uppercase text-primary">Nov</span>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <span class="badge badge-light-primary fw-bolder px-3 py-1 mb-2 align-self-start">Seminar</span>
-                            <span class="fs-7 fw-bold text-muted d-flex align-items-center">
-                                <i class="ki-outline ki-time fs-6 me-1"></i> 1:00 PM - 5:00 PM
-                            </span>
-                        </div>
-                    </div>
+                    <!-- Badge -->
+                    <span class="badge px-3 py-2 fs-8 fw-bolder text-uppercase tracking-wider mb-4 align-self-start" style="background-color: rgba(80, 205, 137, 0.1); color: #50cd89;">SEMINAR</span>
                     
-                    <a href="#" class="fs-3 fw-bolder text-dark text-hover-primary lh-base mb-3 d-block">
+                    <!-- Title -->
+                    <a href="#" class="fs-4 fw-bolder text-dark text-hover-success lh-base mb-6 d-block">
                         Industry Best Practices in Web Dev
                     </a>
                     
-                    <p class="fs-6 text-muted mb-6 flex-grow-1">
-                        Guest speakers from top tech companies talk about modern web architectures and frameworks.
-                    </p>
-
-                    <div class="d-flex align-items-center text-gray-800 fs-7 fw-bold mt-auto pe-2">
-                        <div class="w-30px h-30px rounded bg-light d-flex align-items-center justify-content-center me-3">
-                            <i class="ki-outline ki-geolocation fs-5 text-primary"></i>
+                    <!-- Details List -->
+                    <div class="d-flex flex-column gap-3 mt-auto">
+                        <div class="d-flex align-items-center text-muted fs-7 fw-bold">
+                            <i class="ki-outline ki-calendar text-gray-500 fs-4 me-3"></i>
+                            Tue • November 05, 2024 • 01:00 PM
                         </div>
-                        Auditorium, 8th Floor
-                    </div>
-                </div>
-                <div class="card-footer border-top border-gray-100 p-6 p-lg-8 bg-light d-flex justify-content-between align-items-center flex-wrap gap-3">
-                    <div class="symbol-group symbol-hover">
-                        <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Guest Speaker">
-                            <span class="symbol-label bg-primary text-inverse-primary fw-bold">GS</span>
-                        </div>
-                        <div class="symbol symbol-35px symbol-circle">
-                            <span class="symbol-label bg-light-primary text-primary fs-8 fw-bold">+45</span>
+                        <div class="d-flex align-items-center text-muted fs-7 fw-bold">
+                            <i class="ki-outline ki-geolocation text-gray-500 fs-4 me-3"></i>
+                            Auditorium, 8th Floor
                         </div>
                     </div>
-                    <a href="#" class="btn btn-sm btn-light-primary fw-bolder">Register</a>
                 </div>
             </div>
         </div>

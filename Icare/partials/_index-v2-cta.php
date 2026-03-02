@@ -1,4 +1,4 @@
-<section id="enrollment" class="py-15 py-lg-20 position-relative z-index-2" style="background-color: var(--icare-green); margin-top: -1px;">
+<section id="enrollment" class="py-15 py-lg-20 position-relative z-index-2 bg-geometric bg-geometric-dark bg-shape-2" style="background-color: var(--icare-green); margin-top: -1px;">
   <div class="app-container container-xxl">
     <div class="rounded-4 p-10 p-lg-20 text-center text-white position-relative overflow-hidden shadow-lg border border-white border-opacity-25" style="background-color: var(--icare-green);">
       

@@ -1,7 +1,7 @@
 <?php
 $BASE = isset($ICARE_BASE) ? $ICARE_BASE : '/Icare/Icare';
 ?>
-<section id="services-v2" class="py-15 py-lg-20 position-relative bg-white">
+<section id="services-v2" class="py-15 py-lg-20 position-relative bg-white bg-glow-yellow bg-geometric bg-geometric-light bg-services-icons section-angle-bottom">
   <!-- Decorative background elements -->
   <div class="position-absolute top-0 start-0 mt-10 ms-10 opacity-25">
       <div class="w-150px h-150px border border-2 border-white rounded-circle"></div>

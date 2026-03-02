@@ -50,7 +50,7 @@ include(__DIR__ . "/pages/index-section-cta-gco.php");
           </div>
           <?php
 $base = isset($GCO_BASE) ? $GCO_BASE : '';
-$assets_base = (isset($GCO_BASE) ? $GCO_BASE . 'pages/assets' : 'assets');
+$assets_base = (isset($GCO_BASE) ? $GCO_BASE . 'assets' : 'assets');
 include(__DIR__ . "/../GcoConnect/partials/_footer.php");
 ?>
         </div>

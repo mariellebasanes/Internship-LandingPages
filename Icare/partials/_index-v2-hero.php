@@ -1,7 +1,7 @@
 <?php
 $BASE = isset($ICARE_BASE) ? $ICARE_BASE : '/Icare/Icare';
 ?>
-<section id="hero-v2" class="position-relative overflow-hidden py-20 bg-white">
+<section id="hero-v2" class="position-relative overflow-hidden py-20 bg-white bg-geometric bg-geometric-light bg-hero-icons section-angle-bottom">
   <div class="app-container container-xxl position-relative z-index-1">
     <div class="row align-items-center g-10">
       <div class="col-lg-6">

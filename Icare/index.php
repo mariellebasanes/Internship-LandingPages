@@ -40,6 +40,7 @@ $ICARE_PARTIALS = $icare_root . '/partials';
 <html lang="en">
 <head>
   <?php HEAD_ESSENTIALS(); ?>
+  <link href="<?php echo htmlspecialchars(ICARE_BASE); ?>/assets/css/custom-geometric.css" rel="stylesheet" type="text/css" />
 </head>
 <body id="kt_app_body" data-kt-app-page-loading-enabled="true" data-kt-app-page-loading="on" data-kt-app-layout="light-header" class="app-default">
   <?php include $ICARE_PARTIALS . '/_page-loader.php'; ?>

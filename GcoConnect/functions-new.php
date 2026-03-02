@@ -61,19 +61,19 @@ function HEAD_ESSENTIALS()
 <meta name="twitter:image" content="' . $META_IMAGE . '">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" type="image/svg+xml" href="' . $base . 'pages/assets/img/logo/icon-gco-connect.svg">
-<link rel="manifest" href="' . $base . 'pages/assets/site.webmanifest?v=2">
+<link rel="icon" type="image/svg+xml" href="' . $base . 'assets/img/logo/icon-gco-connect.svg">
+<link rel="manifest" href="' . $base . 'assets/site.webmanifest?v=2">
 
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="GCO Connect">
-<link rel="apple-touch-icon" href="' . $base . 'pages/assets/img/logo/icon-gco-connect.svg">
+<link rel="apple-touch-icon" href="' . $base . 'assets/img/logo/icon-gco-connect.svg">
 
-<link rel="stylesheet" href="' . $base . 'pages/assets/plugins/global/plugins.bundle.css">
-<link rel="stylesheet" href="' . $base . 'pages/assets/css/style.keenicons.css">
-<link rel="stylesheet" href="' . $base . 'pages/assets/css/style.bundle.v2.full.css?version=1.1028">
+<link rel="stylesheet" href="' . $base . 'assets/plugins/global/plugins.bundle.css">
+<link rel="stylesheet" href="' . $base . 'assets/css/style.keenicons.css">
+<link rel="stylesheet" href="' . $base . 'assets/css/style.bundle.v2.full.css?version=1.1028">
 
-<script src="' . $base . 'pages/assets/js/jquery.js"></script>
+<script src="' . $base . 'assets/js/jquery.js"></script>
 
 <!-- Fonts follow sample/assets/ (Helvetica, Arial, sans-serif – no Google Fonts) -->
 
